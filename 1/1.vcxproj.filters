@@ -24,12 +24,18 @@
     <ClCompile Include="math.cpp">
       <Filter>Файлы исходного кода</Filter>
     </ClCompile>
+    <ClCompile Include="checkFunctions.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="InputFunctions.h">
       <Filter>Файлы исходного кода</Filter>
     </ClInclude>
     <ClInclude Include="math.h">
+      <Filter>Файлы исходного кода</Filter>
+    </ClInclude>
+    <ClInclude Include="checkFunctions.h">
       <Filter>Файлы исходного кода</Filter>
     </ClInclude>
   </ItemGroup>

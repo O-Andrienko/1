@@ -146,11 +146,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="checkFunctions.cpp" />
     <ClCompile Include="InputFunctions.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="math.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="checkFunctions.h" />
     <ClInclude Include="InputFunctions.h" />
     <ClInclude Include="math.h" />
   </ItemGroup>
