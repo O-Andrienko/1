@@ -1,2 +1,3 @@
 float getFloat();
-void inputParams(float *a, float *b, float *c);
+int getInt();
+void inputParams(int *a, float *b, int *c);

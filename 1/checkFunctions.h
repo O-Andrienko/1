@@ -1,1 +1,1 @@
-bool checkparams(float a, float b, float c);
+bool checkparams(int a, float b, int c);

@@ -21,25 +21,46 @@ float getFloat()
 	return number;
 }
 
-void inputParams(float *a, float *b, float *c)
+int getInt()
+{
+	float number = 0;
+	char *w, c;
+	w = (char *)calloc(1, 50);
+	int i = 0;
+	while (1)
+	{
+		c = getchar();
+		if (c == 10) break;
+		w[i] = c;
+		i++;
+	}
+
+	number = atoi(w);
+
+
+	return number;
+}
+
+
+void inputParams(int *a, float *b, int *c)
 {
 	char answer = 'n';
 
 	while (answer != 'y')
 	{
-		printf("\n \t Don't forget (B+C)>=0 | B!=0 | A>=0 | C>=0 \n");
+		printf("\n \t Don't forget (B+C)>=0 | B!=0 | A>=0 | C>=0 } A&C are INTEGER\n");
 
 		printf("Input A:");
-		*a = getFloat();
+		*a = getInt();
 
 		printf("Input B:");
 		*b = getFloat();
 
 		printf("Input C:");
-		*c = getFloat();
+		*c = getInt();
 
 		printf("\n\t\t\t\tYou've inputed:\n");
-		printf("\t\tA=%f \t B=%f \t C=%f", *a, *b, *c);
+		printf("\t\tA=%i \t B=%f \t C=%i", *a, *b, *c);
 
 		printf("\n\n\n \t \t Is this data correct?(y - Yes,n - No)\n\t\t\t\t");
 		answer = getchar();
